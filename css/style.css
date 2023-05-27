@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *{border: dotted 1px red;} */
+
+
+/*Estilo para grids*/
+
+.containerindex {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.25fr 1fr 1fr 0.5fr;
+    gap: 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "LOGO LOGO LOGO LOGO LOGO"
+      "NAV NAV NAV NAV NAV"
+      "BLANK1 PERFIL TEXTO TEXTO BLANK2"
+      "BLANK1 ILUS ILUS ILUS BLANK2"
+      "BLANK1 FOOTER FOOTER FOOTER BLANK2";
+  }
+
+.containersobremi {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.5fr 1fr 0.5fr;
+    gap: 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "LOGO LOGO LOGO LOGO LOGO"
+      "NAV NAV NAV NAV NAV"
+      "BLANK1 PERFILSM TEXTOSM TEXTOSM BLANK2"
+      "BLANK1 EDUC EDUC EDUC BLANK2"
+      "BLANK1 FOOTER FOOTER FOOTER BLANK2";
+  }
+
+  
+  .LOGO { grid-area: LOGO; }
+  
+  .NAV { grid-area: NAV; }
+  
+  .ILUS { grid-area: ILUS; }
+  
+  .PERFIL { grid-area: PERFIL; }
+  
+  .TEXTO { grid-area: TEXTO; }
+  
+  .FOOTER { grid-area: FOOTER; }
+  
+  .BLANK1 { grid-area: BLANK1; }
+  
+  .BLANK2 { grid-area: BLANK2; }
+
+  .MAIN { grid-area: MAIN; }
+
+  .PERFILSM { grid-area: PERFILSM; }
+
+  .TEXTOSM { grid-area: TEXTOSM; }
+
+  .EDUC { grid-area: EDUC; }
+
+/*Estilo para Grid de sobre mi*/
+
+  
+/*Estilo para Header y nav de todo*/
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+.divlogo{
+    text-align: center;
+}
+
+.logoindex{
+    width: 250px;
+    padding: 1.5rem;
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: .7rem;
+}
+
+nav ul li{
+    margin: auto 2rem;
+
+}
+
+li a{
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: gray;
+}
+
+.NAV .dropdown img{
+    width: 50px;
+}
+
+.NAV .dropdown{
+    display: none;
+}
+
+a:hover{
+    text-decoration: underline 2px;
+    color: black;
+}
+
+.navbar{
+    display: none;
+}
+
+/*Estilo Main Inicio*/
+
+main{
+    display: flex;
+    justify-content: center;
+}
+.sectionIndex{
+    width: 70%;
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.comp1{
+    border: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.comp1 div img{
+    height: 300px;
+}
+.comp1 div{
+    width: 175px;
+    height: 300px;
+    overflow: hidden;
+}
+.divilus1{
+    display: flex;
+    justify-content: center;
+}
+.divilus2{
+    display: flex;
+    justify-content: center;
+}.divilus3{
+    display: flex;
+    justify-content: center;
+}
+.pInicio{
+    text-align: justify;
+    font-size: 20px;
+    width: 100%;
+    color: brown;
+}
+.pInicio a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 800;
+}
+.pInicio a:hover{
+    text-decoration: underline 2px;
+}
+.perfil1{
+    border-radius: 50%;
+    width: 200px;
+}
+.TEXTO{
+    display: flex;
+    align-items: center;
+
+}
+.PERFIL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilo Footer para todo*/
+
+.FOOTER{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+    justify-items: center;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+    justify-items: center;
+
+}
+.comp2{
+    display: flex;
+    align-items: center;
+}
+.comp2 img{
+    height: 75px;
+
+}
+.textofooter{
+    display: flex;
+    align-items: center;
+}
+.textofooter h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(48, 42, 236);
+}
+
+/*Estilo para Sobre mi*/
+
+.PERFILSM{
+    display: flex;
+    align-items: center;
+
+}
+.divimgSM{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-right: 1rem;
+}
+.imgperfilSM {
+    width: 300px;
+    border-radius: 50% 50% 0 0;
+}
+.TEXTOSM{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.TEXTOSM h1{
+    width: 80%;
+    text-align: center;
+    color: rgb(35, 84, 209);
+}
+.TEXTOSM p{
+    font-size: 1rem;
+    text-align: center;
+    text-align: justify;
+}
+hr{
+    border-top: 4px solid rgb(48, 42, 236);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.EDUC h1{
+    border: 50%;
+}
+.EDUCdiv1{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*grid educación*/
+
+.containerEDUC {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "EDUC1 TXTEDUC1 TXTEDUC1"
+      "EDUC1 TXTEDUC2 TXTEDUC2"
+      "EXP1 TXTEXP1 TXTEXP1"
+      "EXP1 TXTEXP2 TXTEXP2"
+      "EXP2 TXTEXP3 TXTEXP3"
+      "EXP2 TXTEXP4 TXTEXP4";
+  }
+  
+  .EDUC1 { grid-area: EDUC1; }
+  
+  .TXTEDUC1 { grid-area: TXTEDUC1; }
+  
+  .TXTEDUC2 { grid-area: TXTEDUC2; }
+  
+  .EXP1 { grid-area: EXP1; }
+  
+  .TXTEXP1 { grid-area: TXTEXP1; }
+  
+  .TXTEXP2 { grid-area: TXTEXP2; }
+  
+  .EXP2 { grid-area: EXP2; }
+  
+  .TXTEXP3 { grid-area: TXTEXP3; }
+
+  .TXTEXP4 { grid-area: TXTEXP4; }
+
+  /**/
+
+  .containerEDUC h1{
+    color: rgb(48, 42, 236);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  .containerEDUC h3{
+    color: rgb(48, 42, 236);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  .containerEDUC p{
+    text-align: justify;
+  }
+
+
+
+/*Estilo para obra*/
+
+.mainObras{
+    display: flex;
+    justify-content: center;
+}
+.divObras{
+    width: 80%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.divObras img{
+    width: 200px;
+}
+.divObras div{
+    width: 300px;
+}
+.divObras p{
+    margin-top: 100px;
+    text-align: justify;
+}
+.obra1{
+    padding: 5%;
+}
+.obra2{
+    padding: 5%;
+}
+.obra3{
+    padding: 5%;
+}
+
+/*Estilo para comisiones*/
+
+.divComisiones{
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.divComisiones h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(48, 42, 236);
+}
+.iluscomisiones{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+.iluscomisiones img{
+    width: 1000px;
+}
+
+.divComisiones p{
+    text-align: justify;
+    font-weight: 200;
+}
+
+/*Estilo para contacto*/
+
+.divContact{
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.divContact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divContact p{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+
+}
+.divContact h2{
+    display: flex;
+    justify-content: center;
+    color: rgb(48, 42, 236);
+}
+.formContact{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+/*media query*/
+
+@media only screen and (max-width: 800px){
+
+    .containerindex {
+        display: grid;
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
+        grid-template-rows: 0.5fr 0.25fr 0.5fr 1fr 0.5fr;
+        gap: 0.5rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+      "NAV NAV NAV NAV NAV"
+      "BLANK1 PERFIL PERFIL PERFIL BLANK2"
+      "BLANK1 TEXTO TEXTO TEXTO BLANK2"
+      "BLANK1 ILUS ILUS ILUS BLANK2"
+      "BLANK1 FOOTER FOOTER FOOTER BLANK2";
+    }
+
+    .containersobremi {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.25fr 0.25fr 0.5fr ;
+        gap: 2px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "NAV NAV NAV NAV NAV"
+            "BLANK1 PERFILSM PERFILSM PERFILSM BLANK2"
+            "BLANK1 TEXTOSM TEXTOSM TEXTOSM BLANK2"
+            "BLANK1 EDUC EDUC EDUC BLANK2"
+            "BLANK1 FOOTER FOOTER FOOTER BLANK2"
+          ;
+      }
+
+      .containerEDUC {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.25fr 0.5fr 0.25fr 0.25fr 0.5fr 0.25fr 0.5fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "EDUC1 EDUC1 EDUC1"
+          "TXTEDUC1 TXTEDUC1 TXTEDUC1"
+          "TXTEDUC2 TXTEDUC2 TXTEDUC2"
+          "EXP1 EXP1 EXP1"
+          "TXTEXP1 TXTEXP1 TXTEXP1"
+          "TXTEXP2 TXTEXP2 TXTEXP2"
+          "TXTEXP3 TXTEXP3 TXTEXP3"
+          "TXTEXP4 TXTEXP4 TXTEXP4";
+      }
+
+      .containerEDUC{
+        margin-left: 20px;
+
+      }
+
+      .containerEDUC h1{
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .containerEDUC h3{
+        font-size: 15px;
+        text-align: center;
+      }
+
+
+
+    .NAV{
+        display: flex;
+        justify-content: center;
+    }
+
+    .NAV .dropdown{
+        display: contents;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+    nav{
+        display: none;
+    }
+
+    .LOGO{
+        display: none;
+    }
+
+    
+    .navbar{
+        display: contents;
+    }
+
+    .NAV img{
+        width: 50%;
+    }
+
+    .PERFILSM{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
